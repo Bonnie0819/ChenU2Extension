@@ -9,7 +9,7 @@ public class Main {
         //finding sign of expression
         int strLen = expression.length();
         String sign;
-        if(expression.indexOf("*") != -1) {         //checks to see if sign is multiplication
+        if(expression.indexOf("*") != -1) {               //checks to see if sign is multiplication
             sign = "*";
         }else if(expression.indexOf("/") != -1) {         //checks to see if sign is division
             sign = "/";
@@ -29,6 +29,8 @@ public class Main {
 
         //creating object calculator
         Calculator calculate = new Calculator(num1, num2, sign);
+
+        System.out.println(expression + " = " + calculate.solution());
 
 
 
